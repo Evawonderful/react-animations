@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { useEffect, useRef } from "react";
 import gsap, { Power3 } from "gsap";
+import ColorChange from "./components/ColorChange";
 
 function App() {
   const ease = Power3.easeOut;
@@ -129,6 +130,7 @@ function App() {
           <img src="assets/frolic2.png" />
         </div>
       </div>
+      <ColorChange/>
     </div>
   );
 }
