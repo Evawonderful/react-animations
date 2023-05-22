@@ -56,14 +56,14 @@ function App() {
           "+=.1"
         )
         .from(
-          "imgCon",
+          ".imgCon",
           0.5,
           {
             opacity: 0,
             x: 20,
+            ease,
           },
-          ease,
-          "+=0"
+          "+=.1"
         );
     });
 
@@ -126,7 +126,7 @@ function App() {
           </p>
         </div>
 
-        <div className="w-[40%] imgCon">
+        <div className="w-[40%] imgCon ">
           <img src="assets/frolic2.png" />
         </div>
       </div>
