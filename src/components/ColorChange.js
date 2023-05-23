@@ -6,15 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".frolic-pepe", {
-  scrollTrigger: {
-    trigger: ".frolic-pepe",
-    toggleActions: "restart pause resume none",
-  },
-  x: 0,
-  rotation: -360,
-  duration: 3,
-});
+
 
 const ColorChange = () => {
   let revealsRef = useRef([]);
@@ -47,6 +39,21 @@ const ColorChange = () => {
             //     backgroundColor: prevBg,
             //   }),
           },
+        })
+
+        gsap.to(".frolic-pepe", {
+          scrollTrigger: {
+            trigger: ".frolic-pepe",
+            toggleActions: "restart pause resume none",
+          },
+          rotation: 360,
+          duration: 2,
+          onComplete: function() {
+            gsap.to(".frolic-pepe", {
+              x: -100,
+              duration: 3,
+            });
+          }
         });
       });
     });
