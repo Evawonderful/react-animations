@@ -64,7 +64,7 @@ function App() {
             ease,
           },
           "+=.1"
-        );
+        )
     });
 
     return () => ctx.revert();
