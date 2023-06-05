@@ -92,7 +92,7 @@ const HeroSection = () => {
 
 
   return (
-    <div className="h-screen bg-[#231F20] flex justify-center items-center">
+    <div className="z-2 h-screen bg-[#231F20] flex justify-center items-center">
       <div>
         <p className="heroBigText text-white text-8xl my-2 text-center font-helvetica font-bold">Women have</p>
         <p className="heroBigText text-white text-8xl my-2 text-center font-helvetica font-bold">changed design </p>
